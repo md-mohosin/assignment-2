@@ -1,5 +1,6 @@
 
 *{
+    color: white;
     background-color: black;
 }
 header{
@@ -66,10 +67,97 @@ li {
 background-color: #E6533C;
 padding: 15px;
 border-radius: 30px;
+font-weight:600;
 }
 
 .button{
     padding: 15px;
     border-radius: 30px;
     margin-left: 20px;
+}
+
+.habit{
+    color: white;
+    margin-top: 100px;
+}
+
+.habit h1{
+    font-size: 40px;
+}
+
+.habit-text{
+    text-align: center;
+}
+.habit-image{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+  text-align: center;
+}
+.habit-image img{
+    border-radius: 50%;
+}
+
+
+.run-content{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.run-text{
+    width: 50%;
+}
+.run-content img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE VIW RESPONSIVE */
+@media screen and (max-width:576px) {
+    .navbar{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .banner h1{
+        font-size: 40px;
+    }
+
+    .banner-text{
+        width: 100%;
+    }
+
+    .habit-image{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .run-content{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .run-text{
+        width: 100%;
+    }
+
+    .run-content img{
+        width: 350px;
+        border-radius: 10px;
+    }
+
 }
